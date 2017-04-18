@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Index Page</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        ${info}
+        <form action="ActionProcess" method="POST">
+            <input type="hidden" name="act" value="getdata"/>
+            <input type="submit" value="Get Data"/>
+        </form>
+        <form action="ActionProcess" method="POST">
+            <input type="hidden" name="act" value="showdata"/>
+            <input type="submit" value="Show Data"/>
+        </form>
+        <form action="ActionProcess" method="POST">
+            <input type="text" name="filter" value=""/>
+            <input type="hidden" name="act" value="filteddata"/>
+            <input type="submit" value="Filted Data"/>
+        </form>
+    </body>
+</html>
